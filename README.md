@@ -24,22 +24,22 @@ Example Run
 ===========
 Example test runs:
 ```
- 1> timer:tc(readFile,onlyOne,["354984si.ngl"]).
+ 1> timer:tc(mapreduce,onlyOne,["354984si.ngl"]).
  {7379000,true}
 
- (a@Jengapad)1> timer:tc(readFile,main,[['a@Jengapad']]).
+ (a@Jengapad)1> timer:tc(mapreduce,main,[['a@Jengapad']]).
  {6238000,ok}
 
- (a@Jengapad)2> timer:tc(readFile,main,[['a@Jengapad','b@Jengapad']]).
+ (a@Jengapad)2> timer:tc(mapreduce,main,[['a@Jengapad','b@Jengapad']]).
  {5476000,ok}
 
- (a@Jengapad)3> timer:tc(readFile,main,[['a@Jengapad','b@Jengapad','c@Jengapad']]
+ (a@Jengapad)3> timer:tc(mapreduce,main,[['a@Jengapad','b@Jengapad','c@Jengapad']]
  {4715000,ok}
 
- (a@Jengapad)4> timer:tc(readFile,main,[['a@Jengapad','b@Jengapad','c@Jengapad','d@Jengapad']]).
+ (a@Jengapad)4> timer:tc(mapreduce,main,[['a@Jengapad','b@Jengapad','c@Jengapad','d@Jengapad']]).
  {5434000,ok}
 
- (a@Jengapad)2> timer:tc(readFile,main,[['a@Jengapad','b@raspbmc','c@Jengapad','d@Jengapad']]).
+ (a@Jengapad)2> timer:tc(mapreduce,main,[['a@Jengapad','b@raspbmc','c@Jengapad','d@Jengapad']]).
  {16023000,ok}
 ```
 
